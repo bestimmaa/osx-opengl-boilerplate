@@ -1,0 +1,27 @@
+//
+//  UtilityModelShader.fsh
+//  
+//
+
+#define highp
+#define lowp
+
+/////////////////////////////////////////////////////////////////
+// UNIFORMS
+/////////////////////////////////////////////////////////////////
+uniform highp mat4      u_mvpMatrix;
+uniform highp mat3      u_normalMatrix;
+uniform lowp  vec4      u_lightModelAmbientColor;
+uniform highp vec3      u_light0Position;
+uniform highp vec4      u_light0DiffuseColor;
+
+/////////////////////////////////////////////////////////////////
+// Varyings
+/////////////////////////////////////////////////////////////////
+varying lowp vec4       v_lightColor;
+
+
+void main()
+{
+   gl_FragColor = v_lightColor;
+}

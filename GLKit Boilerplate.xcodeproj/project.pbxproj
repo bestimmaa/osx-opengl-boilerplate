@@ -13,6 +13,15 @@
 		2F2F906C1B0F3C8B00B0150B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F906B1B0F3C8B00B0150B /* Images.xcassets */; };
 		2F2F906F1B0F3C8B00B0150B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F906D1B0F3C8B00B0150B /* Main.storyboard */; };
 		2F2F907B1B0F3C8B00B0150B /* GLKit_BoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F907A1B0F3C8B00B0150B /* GLKit_BoilerplateTests.m */; };
+		2F2F90891B0F3D7200B0150B /* PTOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F90881B0F3D7200B0150B /* PTOpenGLView.m */; };
+		2F2F908C1B0F3D8100B0150B /* PTOpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F908B1B0F3D8100B0150B /* PTOpenGLViewController.m */; };
+		2F2F908E1B0F3DC700B0150B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2F908D1B0F3DC700B0150B /* GLKit.framework */; };
+		2F2F90901B0F3DCD00B0150B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2F908F1B0F3DCD00B0150B /* OpenGL.framework */; };
+		2F2F90931B0F3E7A00B0150B /* CHExampleOpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F90921B0F3E7A00B0150B /* CHExampleOpenGLViewController.m */; };
+		2F2F90961B0F40CA00B0150B /* UtilityEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F90951B0F40CA00B0150B /* UtilityEffect.m */; };
+		2F2F90991B0F40D200B0150B /* PTEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F90981B0F40D200B0150B /* PTEffect.m */; };
+		2F2F909C1B0F40DD00B0150B /* PTEffectShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F909A1B0F40DD00B0150B /* PTEffectShader.fsh */; };
+		2F2F909D1B0F40DD00B0150B /* PTEffectShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F909B1B0F40DD00B0150B /* PTEffectShader.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,20 @@
 		2F2F90741B0F3C8B00B0150B /* GLKit BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GLKit BoilerplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2F90791B0F3C8B00B0150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F2F907A1B0F3C8B00B0150B /* GLKit_BoilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKit_BoilerplateTests.m; sourceTree = "<group>"; };
+		2F2F90871B0F3D7200B0150B /* PTOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTOpenGLView.h; sourceTree = "<group>"; };
+		2F2F90881B0F3D7200B0150B /* PTOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTOpenGLView.m; sourceTree = "<group>"; };
+		2F2F908A1B0F3D8100B0150B /* PTOpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTOpenGLViewController.h; sourceTree = "<group>"; };
+		2F2F908B1B0F3D8100B0150B /* PTOpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTOpenGLViewController.m; sourceTree = "<group>"; };
+		2F2F908D1B0F3DC700B0150B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2F2F908F1B0F3DCD00B0150B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2F2F90911B0F3E7A00B0150B /* CHExampleOpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHExampleOpenGLViewController.h; sourceTree = "<group>"; };
+		2F2F90921B0F3E7A00B0150B /* CHExampleOpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHExampleOpenGLViewController.m; sourceTree = "<group>"; };
+		2F2F90941B0F40CA00B0150B /* UtilityEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityEffect.h; sourceTree = "<group>"; };
+		2F2F90951B0F40CA00B0150B /* UtilityEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityEffect.m; sourceTree = "<group>"; };
+		2F2F90971B0F40D200B0150B /* PTEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTEffect.h; sourceTree = "<group>"; };
+		2F2F90981B0F40D200B0150B /* PTEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTEffect.m; sourceTree = "<group>"; };
+		2F2F909A1B0F40DD00B0150B /* PTEffectShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PTEffectShader.fsh; sourceTree = "<group>"; };
+		2F2F909B1B0F40DD00B0150B /* PTEffectShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PTEffectShader.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2F90901B0F3DCD00B0150B /* OpenGL.framework in Frameworks */,
+				2F2F908E1B0F3DC700B0150B /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +104,25 @@
 		2F2F90601B0F3C8B00B0150B /* GLKit Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				2F2F90911B0F3E7A00B0150B /* CHExampleOpenGLViewController.h */,
+				2F2F90921B0F3E7A00B0150B /* CHExampleOpenGLViewController.m */,
+				2F2F908A1B0F3D8100B0150B /* PTOpenGLViewController.h */,
+				2F2F908B1B0F3D8100B0150B /* PTOpenGLViewController.m */,
+				2F2F90871B0F3D7200B0150B /* PTOpenGLView.h */,
+				2F2F90881B0F3D7200B0150B /* PTOpenGLView.m */,
 				2F2F90631B0F3C8B00B0150B /* AppDelegate.h */,
 				2F2F90641B0F3C8B00B0150B /* AppDelegate.m */,
 				2F2F90681B0F3C8B00B0150B /* ViewController.h */,
 				2F2F90691B0F3C8B00B0150B /* ViewController.m */,
+				2F2F90971B0F40D200B0150B /* PTEffect.h */,
+				2F2F90981B0F40D200B0150B /* PTEffect.m */,
+				2F2F90941B0F40CA00B0150B /* UtilityEffect.h */,
+				2F2F90951B0F40CA00B0150B /* UtilityEffect.m */,
+				2F2F909A1B0F40DD00B0150B /* PTEffectShader.fsh */,
+				2F2F909B1B0F40DD00B0150B /* PTEffectShader.vsh */,
 				2F2F906B1B0F3C8B00B0150B /* Images.xcassets */,
+				2F2F908F1B0F3DCD00B0150B /* OpenGL.framework */,
+				2F2F908D1B0F3DC700B0150B /* GLKit.framework */,
 				2F2F906D1B0F3C8B00B0150B /* Main.storyboard */,
 				2F2F90611B0F3C8B00B0150B /* Supporting Files */,
 			);
@@ -197,6 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F2F906C1B0F3C8B00B0150B /* Images.xcassets in Resources */,
+				2F2F909D1B0F40DD00B0150B /* PTEffectShader.vsh in Resources */,
+				2F2F909C1B0F40DD00B0150B /* PTEffectShader.fsh in Resources */,
 				2F2F906F1B0F3C8B00B0150B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2F908C1B0F3D8100B0150B /* PTOpenGLViewController.m in Sources */,
 				2F2F906A1B0F3C8B00B0150B /* ViewController.m in Sources */,
+				2F2F90891B0F3D7200B0150B /* PTOpenGLView.m in Sources */,
+				2F2F90961B0F40CA00B0150B /* UtilityEffect.m in Sources */,
+				2F2F90931B0F3E7A00B0150B /* CHExampleOpenGLViewController.m in Sources */,
 				2F2F90671B0F3C8B00B0150B /* main.m in Sources */,
+				2F2F90991B0F40D200B0150B /* PTEffect.m in Sources */,
 				2F2F90651B0F3C8B00B0150B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

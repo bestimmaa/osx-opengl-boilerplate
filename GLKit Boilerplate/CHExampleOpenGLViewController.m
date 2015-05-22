@@ -8,6 +8,8 @@
 
 #import "CHExampleOpenGLViewController.h"
 #import "PTEffect.h"
+#import "cube.h"
+
 #undef __gl_h_
 #import <GLKit/GLKit.h>
 
@@ -118,7 +120,6 @@ PTEffect *baseEffect;
     
     // Clear Frame Buffer (erase previous drawing)
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-    glClearColor(0.0, 0.0, 0.0, 1.0);
     [self drawSomething];
 }
 
@@ -130,7 +131,41 @@ PTEffect *baseEffect;
     GLKMatrix4 savedModelviewMatrix =
     self.baseEffect.transform.modelviewMatrix;
     
-
+    // Enable use of positions
+    glEnableVertexAttribArray(
+                              GLKVertexAttribPosition);
+    
+    glVertexAttribPointer(
+                          GLKVertexAttribPosition,
+                          3,                   // three components per vertex
+                          GL_FLOAT,            // data is floating point
+                          GL_FALSE,            // no fixed point scaling
+                          3 * sizeof(float), // no gaps in data
+                          cubeVerts);
+    
+    // Enable use of normals
+    glEnableVertexAttribArray(
+                              GLKVertexAttribNormal);
+    
+    glVertexAttribPointer(
+                          GLKVertexAttribNormal,
+                          3,                   // three components per vertex
+                          GL_FLOAT,            // data is floating point
+                          GL_FALSE,            // no fixed point scaling
+                          3 * sizeof(float), // no gaps in data
+                          cubeNormals);
+    
+    self.baseEffect.transform.modelviewMatrix =
+    GLKMatrix4Multiply(savedModelviewMatrix,
+                       GLKMatrix4Identity);
+    
+    [self.baseEffect prepareToDraw];
+    
+    // Draw triangles using the first three vertices in the
+    // currently bound vertex buffer
+    glDrawArrays(GL_TRIANGLES,
+                 0,  // Start with first vertex in currently bound buffer
+                 cubeNumVerts);
     
     // Restore the current modelview matrix
     self.baseEffect.transform.modelviewMatrix = 

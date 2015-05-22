@@ -664,10 +664,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--OpenGL View Controller-->
+        <!--Example OpenGL View Controller-->
         <scene sceneID="Fme-bI-ShJ">
             <objects>
-                <viewController id="ZRV-MT-1yL" customClass="PTOpenGLViewController" sceneMemberID="viewController">
+                <viewController id="ZRV-MT-1yL" customClass="CHExampleOpenGLViewController" sceneMemberID="viewController">
                     <view key="view" id="g6n-TM-7bH" customClass="PTOpenGLView">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

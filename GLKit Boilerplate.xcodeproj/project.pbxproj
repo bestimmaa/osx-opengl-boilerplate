@@ -61,6 +61,7 @@
 		2F2F90981B0F40D200B0150B /* PTEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTEffect.m; sourceTree = "<group>"; };
 		2F2F909A1B0F40DD00B0150B /* PTEffectShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PTEffectShader.fsh; sourceTree = "<group>"; };
 		2F2F909B1B0F40DD00B0150B /* PTEffectShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PTEffectShader.vsh; sourceTree = "<group>"; };
+		2F2F909E1B0F45AA00B0150B /* cube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 		2F2F90601B0F3C8B00B0150B /* GLKit Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				2F2F909E1B0F45AA00B0150B /* cube.h */,
 				2F2F90911B0F3E7A00B0150B /* CHExampleOpenGLViewController.h */,
 				2F2F90921B0F3E7A00B0150B /* CHExampleOpenGLViewController.m */,
 				2F2F908A1B0F3D8100B0150B /* PTOpenGLViewController.h */,
